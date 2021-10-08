@@ -33,8 +33,7 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'
-    searchFolder: 'D:\a\1\s\'
-    testResultsFiles: 'xunit'
-    condition: succeededOrFailed()
-    displayName: 'Publish Test Results outputxunit.xml'
+   testResultsFiles: outputxunit.xml
+   searchFolder: 'D:\a\1\s\'
+   condition: succeededOrFailed()
+   displayName: 'Publish Test Results outputxunit.xml'
