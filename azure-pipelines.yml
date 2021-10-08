@@ -35,6 +35,6 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     searchFolder: 'D:\a\1\s\'
-    testResultsFiles: 'outputxunit.xml'
+    testResultsFiles: 'xunit'
     condition: succeededOrFailed()
     displayName: 'Publish Test Results outputxunit.xml'
