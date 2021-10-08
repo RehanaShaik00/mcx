@@ -4,7 +4,7 @@ Variables   ../PageObjects/Login.py
 
 *** Keywords ***
 I login
-    Sanmple1Stepdef.lauch url
+    Sanmple1Stepdef.Lauch Url
     Sample1Stepdef.Enter UserName
     Sample1Stepdef.Enter Password
     Sample1Stepdef.Signin
