@@ -32,6 +32,9 @@ steps:
 
 
 - task: PublishTestResults@2
-  displayName: 'Publish Test Results **/test-output-*.xml '
   inputs:
-    testResultsFiles: '**/test-output-*.xml '
+    testResultsFormat: 'JUnit'
+    searchFolder: 'D:\a\1\s\'
+    testResultsFiles: 'output.xml'
+    condition: succeededOrFailed()
+    displayName: 'Publish Test Results outputxunit.xml'
