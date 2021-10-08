@@ -4,10 +4,10 @@ Variables   ../PageObjects/Login.py
 
 *** Keywords ***
 I login
-    lauch url
-    Enter UserName
-    Enter Password
-    Signin
+    Sanmple1Stepdef.lauch url
+    Sample1Stepdef.Enter UserName
+    Sample1Stepdef.Enter Password
+    Sample1Stepdef.Signin
     
 launch url
     open browse     ${url}      headless browser
