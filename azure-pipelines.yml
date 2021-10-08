@@ -31,8 +31,6 @@ steps:
    script: robot --pythonpath . -x outputxunit.xml Sample1.robot
 
 - task: PublishTestResults@2
-  displayName: 'Publish Test Results'
-  continueOnError: true
   inputs:
-   workingDirectory: Danfoss/FeatureFiles/
-   testResultsFiles: outputxunit.xml
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'outputxunit.xml'
