@@ -28,7 +28,7 @@ steps:
 - task: CmdLine@2
   inputs:
    workingDirectory: Danfoss/FeatureFiles/
-   script: robot -x 'outputxunit.xml' -t 'Your Test' Sample1.robot
+   script: robot Sample1.robot
 
 
 - task: PublishTestResults@2
