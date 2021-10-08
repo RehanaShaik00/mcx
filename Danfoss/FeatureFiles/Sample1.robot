@@ -4,6 +4,8 @@ Resource    ../StepDefs/Sample1Stepdef.robot
 
 *** Test Cases ***
 Login Test
-    #bdd
-    Given I login
+    Given Launch Url
+    When Enter UserName
+    Then Enter Password
+    Then Signin
 
