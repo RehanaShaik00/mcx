@@ -33,6 +33,6 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'testresults/TEST-*.xml'
+    testResultsFiles: 'output.xml'
     searchFolder: '$(system.defaultworkingdirectory)'
     failTaskOnFailedTests: true
