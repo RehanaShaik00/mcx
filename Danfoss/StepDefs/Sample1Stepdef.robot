@@ -3,7 +3,7 @@ Library     SeleniumLibrary
 Variables   ../PageObjects/Login.py
 
 *** Keywords *** 
-launch url
+Launch Url
     open browse     ${url}      headless browser
     
 Enter UserName
