@@ -29,11 +29,10 @@ steps:
   inputs:
    workingDirectory: Danfoss/FeatureFiles/
    script: robot Sample1.robot
-- task: PublishTestResults@2
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    searchFolder: 'D:\a\1\s\'
-    testResultsFiles: 'output.xml'
-    condition: succeededOrFailed()
-    displayName: 'Publish Test Results outputxunit.xml'
+    testResultsFiles: 'testresults/TEST-*.xml'
+    searchFolder: '$(system.defaultworkingdirectory)'
+    failTaskOnFailedTests: true
