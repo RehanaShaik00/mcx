@@ -28,13 +28,13 @@ steps:
 - task: CmdLine@2
   inputs:
    workingDirectory: Danfoss/FeatureFiles/
-   script: robot Sample1.robot
+   script: robot -x 'outputxunit.xml' -t robot Sample1.robot
 
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
     searchFolder: 'D:\a\1\s\'
-    testResultsFiles: 'output.xml'
+    testResultsFiles: 'outputxunit.xml'
     condition: succeededOrFailed()
     displayName: 'Publish Test Results outputxunit.xml'
