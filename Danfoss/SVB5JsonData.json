@@ -1,0 +1,16 @@
+{
+	"username": "Supervisor",
+	"password": "S@danfoss123",
+	"device_name": "AK-CC550-018x 20",
+	"AK-CC550-018x_20": {
+		"HighTemp": "25.0",
+		"LowTemp": "-5.0",
+		"delay": "0",
+		"HighAlarmType": "--- High Temp Alarm",
+		"LowAlarmType": "--- Low Temp Alarm",
+		"address": "20",
+		"setting": "Alarm if error",
+		"level": "Normal",
+		"action": "1"
+	}
+}

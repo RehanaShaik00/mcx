@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211008 10:48:36.401" rpa="false" schemaversion="2">
+<suite id="s1" name="Sample1" source="C:\Users\99003549\PycharmProjects\demo\Danfoss\FeatureFiles\Sample1.robot">
+<test id="s1-t1" name="Login Test">
+<kw name="Given I login" library="Sample1Stepdef">
+<kw name="lauch url" library="LoginKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211008 10:48:36.786" level="INFO">Opening browser 'headless  chrome' to base url 'http://118.185.187.242:6031/Login.html'.</msg>
+<status status="PASS" starttime="20211008 10:48:36.786" endtime="20211008 10:49:01.112"/>
+</kw>
+<status status="PASS" starttime="20211008 10:48:36.786" endtime="20211008 10:49:01.112"/>
+</kw>
+<kw name="Enter UserName" library="LoginKeywords">
+<kw name="MCXjsondata" library="MCXJsonData">
+<var>${user}</var>
+<kw name="Load JSON From File" library="JSONLibrary">
+<var>${json_obj}</var>
+<arg>C:/Users/99003549/PycharmProjects/demo/Danfoss/MCXJsonData.json</arg>
+<doc>Load JSON from file.</doc>
+<msg timestamp="20211008 10:49:01.114" level="INFO">${json_obj} = {'username': 'admin', 'password': 'PASS', 'high_temp_controller_value': '9000', 'Low_temp_controller_value': '6000'}</msg>
+<status status="PASS" starttime="20211008 10:49:01.113" endtime="20211008 10:49:01.114"/>
+</kw>
+<msg timestamp="20211008 10:49:01.114" level="INFO">${user} = {'username': 'admin', 'password': 'PASS', 'high_temp_controller_value': '9000', 'Low_temp_controller_value': '6000'}</msg>
+<status status="PASS" starttime="20211008 10:49:01.113" endtime="20211008 10:49:01.114"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>${user['username']}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211008 10:49:01.115" level="INFO">Typing text 'admin' into text field 'xpath://input[@id='usernameDisplay']'.</msg>
+<status status="PASS" starttime="20211008 10:49:01.114" endtime="20211008 10:49:01.197"/>
+</kw>
+<status status="PASS" starttime="20211008 10:49:01.112" endtime="20211008 10:49:01.197"/>
+</kw>
+<kw name="Enter Password" library="LoginKeywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>PASS</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211008 10:49:01.198" level="INFO">Typing text 'PASS' into text field 'xpath://input[@id='password']'.</msg>
+<status status="PASS" starttime="20211008 10:49:01.197" endtime="20211008 10:49:01.278"/>
+</kw>
+<status status="PASS" starttime="20211008 10:49:01.197" endtime="20211008 10:49:01.278"/>
+</kw>
+<kw name="Signin" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${signin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211008 10:49:01.279" level="INFO">Clicking element 'xpath://input[@id='button_login']'.</msg>
+<status status="PASS" starttime="20211008 10:49:01.279" endtime="20211008 10:49:01.332"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211008 10:49:31.348" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20211008 10:49:01.333" endtime="20211008 10:49:31.348"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211008 10:49:31.348" endtime="20211008 10:49:33.405"/>
+</kw>
+<status status="PASS" starttime="20211008 10:49:01.278" endtime="20211008 10:49:33.405"/>
+</kw>
+<status status="PASS" starttime="20211008 10:48:36.786" endtime="20211008 10:49:33.405"/>
+</kw>
+<status status="PASS" starttime="20211008 10:48:36.786" endtime="20211008 10:49:33.405"/>
+</test>
+<status status="PASS" starttime="20211008 10:48:36.416" endtime="20211008 10:49:33.405"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sample1">Sample1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

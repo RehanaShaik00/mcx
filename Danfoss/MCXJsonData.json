@@ -1,0 +1,6 @@
+{
+  "username": "admin",
+  "password": "PASS",
+  "high_temp_controller_value": "9000",
+  "Low_temp_controller_value": "6000"
+}
