@@ -2,13 +2,7 @@
 Library     SeleniumLibrary
 Variables   ../PageObjects/Login.py
 
-*** Keywords ***
-I login
-    Sanmple1Stepdef.Lauch Url
-    Sample1Stepdef.Enter UserName
-    Sample1Stepdef.Enter Password
-    Sample1Stepdef.Signin
-    
+*** Keywords *** 
 launch url
     open browse     ${url}      headless browser
     
