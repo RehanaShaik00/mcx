@@ -4,7 +4,7 @@ Variables   ../PageObjects/Login.py
 
 *** Keywords *** 
 Launch Url
-    open browser     ${url}      headless browser
+    open browser     ${url}      headless chrome
     
 Enter UserName
     input text      ${username}     admin
