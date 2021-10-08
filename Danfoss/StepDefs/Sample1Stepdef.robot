@@ -1,6 +1,5 @@
 *** Setting ***
 Library     SeleniumLibrary
-Resource    ../Keywords/LoginKeywords.robot
 Variables   ../PageObjects/Login.py
 
 *** Keywords ***
